@@ -17,7 +17,6 @@ inputs:
     default: 0.01
 
 environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu@latest
-
 compute: azureml:aml-cluster
 
 experiment_name: diabetes-training
