@@ -11,7 +11,12 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v4
 
-      - name: Install az ml extension
+      - name: Install Azure CLI
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+
+      - name: Install Azure ML extension
         run: az extension add -n ml -y
 
       - name: Azure login
